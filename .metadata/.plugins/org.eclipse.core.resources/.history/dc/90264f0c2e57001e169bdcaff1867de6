@@ -1,0 +1,23 @@
+package Ejercicios_Clase1;
+
+
+public class Ej1 {
+
+	public static void main(String[] args) {
+		int numInicio=2;
+		int numFin=14;
+		int contador=0;
+		
+		
+		// Apartado A)
+		
+		contador=numInicio;
+		while ( contador < numFin) 
+		{
+			System.out.println(contador);			
+		}
+		
+		
+	}
+
+}

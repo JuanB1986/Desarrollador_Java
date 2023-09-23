@@ -1,0 +1,5 @@
+INDEX VERSION 1.134+C:\Users\JM\Desktop\Java\Curso Neoris\Desarrollador Java Neoris\.metadata\.plugins\org.eclipse.jdt.core
+750398843.index
+780660103.index
+1865797976.index
+2985776969.index

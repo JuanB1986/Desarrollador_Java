@@ -1,0 +1,31 @@
+package Ejercicios_Clase1;
+import java.util.Scanner;
+
+
+public class Ejercicio2_D {
+
+	public static void main(String[] args) {
+		
+		Scanner ingresoDatos = new Scanner(System.in);
+
+		float ingresoMensual=0.0f;
+		String flagVehiculos='n';
+		String flagInmuebles='n';
+		String flagLujo='n';
+		
+		
+		//Ingreso de datos		
+		System.out.println("Ingreso Mensual: ");
+		ingresoMensual = ingresoDatos.nextFloat();
+		
+		System.out.println("Tiene más de 3 vehiculos con antigüedad menor a 5 años? (S/N): ");
+		flagVehiculos = ingresoDatos.next();
+		
+		if (flagVehiculos == "s")
+			System.out.println("Tiene mas de 3 inmuebles? (S/N): ");
+		
+		
+		
+	}
+
+}

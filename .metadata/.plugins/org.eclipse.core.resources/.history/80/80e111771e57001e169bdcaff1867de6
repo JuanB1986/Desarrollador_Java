@@ -1,0 +1,18 @@
+package paquete;
+import java.util.Scanner;
+
+
+public class ejemplo {
+
+	@SuppressWarnings("resource")
+	public static void main(String[] args) {
+		
+		Scanner entrada;
+		entrada= new Scanner("");
+		
+		float fl = entrada.nextFloat();
+		System.out.println(fl);
+			
+	}
+
+}
