@@ -1,0 +1,12 @@
+package Ejercicios;
+import java.nio.file.Files;
+
+
+public class Archivos_Ejemplo_Clase {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

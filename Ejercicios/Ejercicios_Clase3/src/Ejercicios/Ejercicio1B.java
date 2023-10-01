@@ -41,8 +41,7 @@ public class Ejercicio1B {
 			for (i=0;i<vector.length;++i)
 			{
 				System.out.println(vector[i]);
-			}			
-
+			}	
 	}
 
 }

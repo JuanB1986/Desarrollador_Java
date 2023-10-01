@@ -1,0 +1,60 @@
+package Ejercicios;
+import java.nio.file.Paths;
+import java.io.IOException;
+import java.nio.file.*;
+import java.util.*;
+
+
+public class Ejercicio3 
+{
+	/***************************************************************
+	Función: Codificación de texto
+	****************************************************************/
+	private static String codificador(String texto, int desplaCaracter) {
+
+		byte byteTemp;
+		String texto2="";
+		int i;
+		
+		for (i=0;i<texto.length();++i)
+		{		
+			byteTemp = (byte)texto.charAt(i);
+			byteTemp += desplaCaracter;				//Siguente Caracter
+			texto2 = texto2 + (char)byteTemp;
+		}
+
+		return texto2;
+	}	
+	
+	/***************************************************************
+	Main Program.
+	****************************************************************/	
+	public static void main(String[] args) throws IOException 
+	{
+		
+		String texto="",texto2="",txtSalida="";
+		String split[];
+		int i;
+		byte desplaza;													
+		
+		List lista;
+		Files archivoIn = null;
+		Files archivoOut = null;
+		
+		lista = archivoIn.readAllLines(Paths.get("./archivos_ej3/entrada.n"));
+		desplaza=2;	
+			
+		byte bytesOut[];
+		for(i=0;i<lista.size();++i)
+		{
+			texto=lista.get(i).toString();
+			texto2=codificador(texto,desplaza);	
+			System.out.print(texto2+"\n");
+			txtSalida+= texto2+"\n";										//arma el archivo de salida en string.	
+		}	
+		bytesOut=txtSalida.getBytes();										//paso el archivo a array de byte
+		archivoOut.write(Paths.get("./archivos_ej3/salida.n"),bytesOut );	//escribe archivo.
+		
+		
+	}
+}

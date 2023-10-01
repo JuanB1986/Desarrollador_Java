@@ -1,0 +1,31 @@
+package Ejercicios;
+import java.io.IOException;
+import java.nio.file.*;
+import java.nio.file.Paths;
+
+public class Ejercicio2 {
+
+	public static void main(String[] args) throws IOException {
+		
+		Files archivo = null;
+		int i;		
+
+		String file2Path= "./archivos/numeros.n";
+		String fileLine;
+		String split[]=new String [100];
+		
+	
+		fileLine = archivo.readString(Paths.get(file2Path));
+			
+		split=fileLine.split("\n");		
+		
+		split[0].replaceAll("\n", "");
+		
+		//i=Integer.parseInt(split[0]);
+		
+		System.out.print(split[0].length());
+		
+		
+	}
+
+}
