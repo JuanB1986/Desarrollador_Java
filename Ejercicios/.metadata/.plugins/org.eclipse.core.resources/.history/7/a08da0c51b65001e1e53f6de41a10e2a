@@ -1,0 +1,10 @@
+package Ejercicio1;
+
+public class Descuento {
+
+	private final float descFijo=0.15f;
+	private float descVar;
+	
+	public Descuento() {}
+	
+}

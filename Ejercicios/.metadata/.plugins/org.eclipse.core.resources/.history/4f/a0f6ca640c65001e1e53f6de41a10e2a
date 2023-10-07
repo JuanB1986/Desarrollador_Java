@@ -1,0 +1,21 @@
+package Ejercicio1;
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		ComboProductos producto1=new ComboProductos(3);
+		ComboProductos producto2=new ComboProductos(1);
+		ComboProductos producto3=new ComboProductos(2);
+		
+		//Carga Combo de productos.
+		producto1.
+		
+		
+		
+		
+		
+		
+	}
+
+}

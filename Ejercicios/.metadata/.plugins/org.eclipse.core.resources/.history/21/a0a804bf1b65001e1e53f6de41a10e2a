@@ -1,0 +1,12 @@
+package Ejercicio1;
+
+public class DescuentoPorc extends Descuento{
+	
+	private float desc;
+	public DescuentoPorc(float desc) {
+		super();
+	}
+	
+	public float getDescuento() {return this.desc;}
+
+}

@@ -1,0 +1,13 @@
+package Ejercicio1;
+
+public class DescuentoFijo extends Descuento{
+
+		
+		public DescuentoFijo() {
+			super();
+		}
+		
+		public float getPorcentaje() {
+			return this.de
+		}
+}

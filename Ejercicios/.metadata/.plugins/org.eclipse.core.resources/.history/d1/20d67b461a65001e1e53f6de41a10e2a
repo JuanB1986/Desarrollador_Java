@@ -1,0 +1,7 @@
+package Ejercicio1;
+
+public class DescuentoFijo extends Descuento{
+
+		private final float pocentaje=0.15f; 
+	
+}

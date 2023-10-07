@@ -1,0 +1,116 @@
+package Ejercicio1;
+
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.io.IOException;
+import java.util.*;
+
+public class Carrito {
+	
+	private float totalPrecioDescuento;
+	private float totalPrecio; 
+	private float totalPeso;
+	private ComboProductos prodCompra[];
+	private int ptr;
+	private final int cantMaximaProd=100;
+	private String ruta;
+	private boolean tipoConstructor;
+	
+	//Constructor 
+	public Carrito() {
+		this.prodCompra=new ComboProductos [cantMaximaProd];
+		this.ptr=0;
+		this.tipoConstructor=false;
+	}
+	
+	//Constructor sobrecargado: Añado ruta para leer archivo de base de datos de compra
+	public Carrito(String ruta) {
+		this.ruta=ruta;
+		this.ptr=0;
+		this.tipoConstructor=true;
+	}
+	
+	//Método agregar producto
+	public void agregarProducto(ComboProductos producto) {
+		if (this.ptr<this.cantMaximaProd) {
+			this.prodCompra[ptr++]=producto;
+		}
+		else
+		{
+			System.out.print("Máximo de productos alcanzado");
+		}
+	}
+	
+	
+	//Método sobrecargado: agregar desde archivo de base de datos
+	public void agregarProducto() {
+		String separador[];
+		String file=null;
+		int i=2;
+		float tempPrecio, tempPeso;
+		
+		try {
+			file = Files.readString(Paths.get(ruta));
+		}
+		catch(IOException e) {}		
+		
+		separador = file.split(",");
+		
+		for(i=0;i<1;++i)
+		{
+			prodCompra[2].cargarProductos("sd", 100.0f, 100.0f,0);
+			//prodCompra[0].cargarProductos(separador[i*3], Float.parseFloat(separador[(i*3)+1].strip()), Float.parseFloat(separador[(i*3)+2].strip()), i);
+			//System.out.println(separador.length);
+		}
+		
+		
+	}
+	
+	
+	//Método computo precio
+	public void computoTotales(Descuento objDescIn) 
+	{
+		this.totalPeso=0.0f;
+		this.totalPrecio=0.0f;
+		
+		Descuento objDesc=new Descuento();
+		objDesc=objDescIn;
+		
+		int i,j;
+		for (i=0;i<this.ptr;++i) {
+			for (j=0;j<this.prodCompra[i].getTotalItems();++j) {
+				this.totalPrecio += this.prodCompra[i].getPrecio(j);
+				this.totalPeso += this.prodCompra[i].getPeso(j);
+			}			
+		}	
+		totalPrecioDescuento = totalPrecio - totalPrecio*objDesc.getDescuento();
+	}
+	
+	
+	
+	//Métodos get precios
+	public float getPrecioTotal() {return this.totalPrecio;}
+	
+	public float getPesoTotal() {return this.totalPeso;}	
+	
+	
+	
+	
+	//Método imprimir ticket.
+	public void imprimirTicket() {
+		int i,j;
+		System.out.println("********************TICKET********************");
+		
+		for (i=0;i<this.ptr;++i) {
+			for (j=0;j<this.prodCompra[i].getTotalItems();++j) {
+				System.out.println(prodCompra[i].getDescripcion(j)+ "	$: "+prodCompra[i].getPrecio(j)+" 	Kg: "+prodCompra[i].getPeso(j));
+			}			
+		}				
+		System.out.println("-----------------------------------------------");
+		System.out.println("Total $:	"+this.totalPrecio);
+		System.out.println("Total con Descuento $:	"+this.totalPrecioDescuento);
+		System.out.println("Total Kg:	"+this.totalPeso);
+		System.out.println("**********************************************");
+		System.out.print("\n\n");		
+	}
+}

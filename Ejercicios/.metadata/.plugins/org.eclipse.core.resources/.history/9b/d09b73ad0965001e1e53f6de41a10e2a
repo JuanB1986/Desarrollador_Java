@@ -1,0 +1,33 @@
+package Ejercicio1;
+
+public class ComboProductos {
+
+	private String descripcion[];
+	private float precio[];
+	private float peso[];
+	private int totalItems;
+	
+	public ComboProductos(int cantItems)
+	{
+		this.descripcion=new String [cantItems];
+		this.precio=new float[cantItems];
+		this.peso=new float [cantItems];
+		this.totalItems=cantItems;
+	}
+	
+	public void setDescripcion(String descripcion, float precio,float peso, int item) {		
+		this.descripcion[item]=descripcion;		
+		this.precio[item]=precio;
+		this.peso[item]=peso;
+	}
+		
+	void changeProducto (String descripcion, float precio, float peso, int item) {
+		this.descripcion[item]=descripcion;
+		this.peso[item]=peso;
+		this.precio[item]=precio;
+	}	
+	public int getMaxItems() {
+		return this.totalItems;
+	}
+	
+}
