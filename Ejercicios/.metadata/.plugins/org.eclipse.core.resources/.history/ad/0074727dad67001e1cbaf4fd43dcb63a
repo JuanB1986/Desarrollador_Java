@@ -1,0 +1,14 @@
+package com.Ejercicios_Clase6;
+
+import org.junit.Test;
+
+public class claculadoraTest {
+	
+	
+	@Test
+	void pruebaCalculadora() {
+		
+		
+	}
+
+}

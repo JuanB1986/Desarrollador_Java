@@ -1,0 +1,30 @@
+package com.Ejercicios_Clase6;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
+
+import org.junit.Test;
+
+public class claculadoraTest {	
+
+	@Test
+	public void pruebaSumaCalculadora() {
+		
+		double n1=1.0f;
+		double n2=5.0f;
+		double valEsp=6.0;		
+		assertEquals(valEsp,calculadora.suma(n1, n2),0.0f);		//Se agrega tercer argumento para que no quede Deprecated !
+	}
+	
+	@Test
+	public void pruebaDivisionCalculadora() {
+		double n1=1.0f;
+		double n2=1.0f;
+		double valEsp=2.0f;		
+		assertEquals(valEsp,calculadora.dividir(n1, n2),2.0f);
+		
+	}
+	
+	
+
+}

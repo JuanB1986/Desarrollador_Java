@@ -1,0 +1,30 @@
+package com.Ejercicios_Clase6;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
+
+import org.junit.Test;
+
+public class claculadoraTest {	
+
+	@Test
+	public void prueba1() {	//1
+		
+		double n1=80.0f;
+		double n2=3.0f;
+		double valEsp=240.0;		
+		assertEquals(valEsp,calculadora.sumar(n1, n2),0.0f);		//Se agrega tercer argumento DELTA.
+	}
+	
+	@Test
+	public void prueba2() {
+		double n1=1.0f;
+		double n2=1.0f;
+		double valEsp=2.0f;		
+		assertEquals(valEsp,calculadora.dividir(n1, n2),0.5f);		
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,17 @@
+package com.Ejercicios_Clase6;
+
+import org.junit.Test;
+
+public class claculadoraTest {	
+
+	@Test
+	public void pruebaCalculadora() {
+		
+		double n1=1.0f;
+		double n2=5.0f;
+		double valEsp=6.0;		
+		assertEquals(2.0f,2.3f);
+		
+	}
+
+}
