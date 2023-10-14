@@ -1,0 +1,13 @@
+package com.Ejercicios_Clase7;
+
+
+public class itemCarrito extends Producto{
+
+		private int cantidad;
+		private Producto producto;
+	
+		public void itmeCarrito () {
+			
+		}
+
+}

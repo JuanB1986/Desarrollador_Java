@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.Ejercicios_Clase6.claculadoraTest&apos; to &apos;calculadoraTest&apos;&#x0D;&#x0A;- Original project: &apos;Ejercicios_Clase6&apos;&#x0D;&#x0A;- Original element: &apos;com.Ejercicios_Clase6.claculadoraTest&apos;&#x0D;&#x0A;- Renamed element: &apos;com.Ejercicios_Clase6.calculadoraTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;claculadoraTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com.Ejercicios_Clase6{claculadoraTest.java[claculadoraTest" matchStrategy="1" name="calculadoraTest" qualified="false" references="true" similarDeclarations="false" stamp="1697242510987" textual="false" version="1.0"/>
+</session>

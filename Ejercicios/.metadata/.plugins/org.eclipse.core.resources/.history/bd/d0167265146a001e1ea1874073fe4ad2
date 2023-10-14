@@ -1,0 +1,15 @@
+package com.Ejercicios_Clase7;
+
+public class DescuentoFijo extends Descuento{
+
+		private final float descuento=0.05f;
+
+		public DescuentoFijo() {
+			
+		}
+		
+		public float getDescuento() {
+			return this.descuento;
+		}
+		
+}

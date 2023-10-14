@@ -1,0 +1,18 @@
+package com.Ejercicios_Clase7;
+
+public class CarritoTest {
+	
+	@Test
+	public void PruebaMetodoGetPrecioTotal() {
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+
+}

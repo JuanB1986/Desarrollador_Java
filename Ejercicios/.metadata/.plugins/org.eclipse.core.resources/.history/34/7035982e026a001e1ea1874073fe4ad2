@@ -1,0 +1,26 @@
+package com.Ejercicios_Clase7;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	Producto producto1=new Producto("",1.0f,1.0f);
+    	
+    	Producto objProductos[];
+    	
+    	
+		//Carga productos.
+		objProductos[0]=new Producto("Manzana", 150.2f, 1.0f);
+		objProductos[1]=new Producto("Peras", 102f, 1.3f);
+		objProductos[2]=new Producto("Bananas", 110f, 1.5f);		
+		objProductos[3]=new Producto("Pasta dental", 55, 0.1f);
+		objProductos[4]=new Producto("Cepillo de dientes", 35, 0.05f);		
+		objProductos[5]=new Producto("Cerveza Importada Hoegaarden", 230f, 0.5f);
+		objProductos[6]=new Producto("Cerveza Importada Erdinger", 310f, 0.5f);
+		objProductos[7]=new Producto("Cerveza Importada Grolsch", 280f, 0.5f);
+	}
+}

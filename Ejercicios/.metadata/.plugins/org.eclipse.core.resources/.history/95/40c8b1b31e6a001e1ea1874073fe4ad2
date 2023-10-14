@@ -1,0 +1,18 @@
+package com.Ejercicios_Clase7;
+
+public class DescuentoPorcentajeConTope extends Descuento{
+	
+	private float tope;
+	private float descuento;
+	
+	public DescuentoPorcentajeConTope(float descuento) {
+		super();
+		this.descuento=descuento;		
+	}
+	
+	public float getDescuento() {
+		return this.descuento;
+	}
+	
+
+}

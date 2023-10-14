@@ -1,0 +1,29 @@
+package com.Ejercicios_Clase7;
+
+
+public class itemCarrito extends Producto{
+
+		private int cantidad;
+		private Producto producto;
+	
+		public itmeCarrito (int cantidad, Producto producto) {
+			super();
+		}
+		
+		public void setCantidad(int cantidad) {
+			this.cantidad=cantidad;
+		}
+		
+		public int getCantidad() {
+			return this.cantidad;
+		}
+		
+		public void setProducto(Producto producto) {
+			this.producto=producto;
+		}
+		
+		public Producto getProducto() {
+			return this.producto;
+		}
+}
+

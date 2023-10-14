@@ -1,0 +1,14 @@
+package com.Ejercicios_Clase7;
+
+
+public class Producto {
+
+	private String descripcion;
+	private float precio;
+	private float peso;
+	
+	public String getDescripcion() {
+		return this.descripcion;
+	}
+	
+}

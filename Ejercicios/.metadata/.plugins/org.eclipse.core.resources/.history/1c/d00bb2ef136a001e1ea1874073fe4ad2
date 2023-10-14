@@ -1,0 +1,7 @@
+package com.Ejercicios_Clase7;
+
+public class DescuentoFijo extends Descuento{
+
+		
+
+}

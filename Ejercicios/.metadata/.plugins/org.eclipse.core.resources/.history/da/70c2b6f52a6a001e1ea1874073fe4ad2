@@ -1,0 +1,19 @@
+package com.Ejercicios_Clase7;
+
+import org.junit.Test;
+
+public class CarritoTest {
+	
+	@Test
+	public void PruebaGetPrecioTotalobjCompra1() {
+		
+		double precioCalculado=10394.9;
+		double calculo;
+		
+		
+	}
+	
+	
+	
+
+}

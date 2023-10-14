@@ -1,0 +1,32 @@
+package com.Ejercicios_Clase7;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	
+      	Producto objProductos[]=new Producto[10];
+      	itemCarrito objItemCarrito[]=new itemCarrito[20];
+      	
+		//Carga productos.
+		objProductos[0]=new Producto("Manzana", 80.0f, 0.25f);
+		objProductos[1]=new Producto("Peras", 68.0f, 0.3f);
+		objProductos[2]=new Producto("Bananas", 56f, 0.2f);		
+		objProductos[3]=new Producto("Pasta dental", 230.0f, 0.07f);
+		objProductos[4]=new Producto("Cepillo de dientes", 350.0f, 0.05f);		
+		objProductos[5]=new Producto("Cerveza Importada Hoegaarden", 230f, 0.5f);
+		objProductos[6]=new Producto("Cerveza Importada Erdinger", 3100f, 1.5f);
+		objProductos[7]=new Producto("Cerveza Importada Grolsch", 2800f, 1.5f);
+		
+		//Items carrito
+		objItemCarrito[0]=new itemCarrito(objProductos[0], 4);
+		objItemCarrito[1]=new itemCarrito(objProductos[7], 5);
+		objItemCarrito[2]=new itemCarrito(objProductos[3], 2);
+		objItemCarrito[3]=new itemCarrito(objProductos[6], 3);
+		objItemCarrito[4]=new itemCarrito(objProductos[4], 2);
+		objItemCarrito[5]=new itemCarrito(objProductos[2], 7);
+		
+		
+		
+	}
+}

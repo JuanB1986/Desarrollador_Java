@@ -1,0 +1,15 @@
+package com.Ejercicios_Clase7;
+
+public class DescuentoPorcentaje extends Descuento{
+	
+	private static float descuento;
+	
+	public DescuentoPorcentaje(float descuento) {
+		super();
+	}
+	
+	public float getDescuento() {
+		
+		return this.descuento;
+	}
+}

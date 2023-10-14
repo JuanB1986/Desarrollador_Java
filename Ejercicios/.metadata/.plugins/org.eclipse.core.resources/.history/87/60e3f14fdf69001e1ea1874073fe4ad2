@@ -1,0 +1,13 @@
+package com.Ejercicios_Clase7;
+
+public class DescuentoPorcentaje extends Descuento{
+	
+
+	public DescuentoPorcentaje(float descVar) {
+		super();
+		this.descVar=descVar;
+	}
+	
+	public float getDescuento() {return this.descVar;}
+
+}

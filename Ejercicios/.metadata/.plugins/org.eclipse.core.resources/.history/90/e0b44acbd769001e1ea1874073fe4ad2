@@ -1,0 +1,13 @@
+package com.Ejercicios_Clase7;
+
+public class DescuentoVar extends Descuento{
+	
+
+	public DescuentoVar(float descVar) {
+		super();
+		this.descVar=descVar;
+	}
+	
+	public float getDescuento() {return this.descVar;}
+
+}
