@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\JM\Desktop\Java\Curso Neoris\Ejercicios\Ejercicios_Clase5\src\Ejercicio1y2\Carrito.java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -25,12 +26,14 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.Ejercicios_Clase7"/>
 			<item value="com.Ejercicios_Clase6"/>
 		</list>
 		<list key="groupId">
 			<item value="com"/>
 		</list>
 		<list key="artifactId">
+			<item value="Ejercicios_Clase7"/>
 			<item value="Ejercicios_Clase6"/>
 		</list>
 		<list key="projectNameTemplate">

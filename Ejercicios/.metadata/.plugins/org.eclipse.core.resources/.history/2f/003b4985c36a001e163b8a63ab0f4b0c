@@ -1,0 +1,9 @@
+
+
+public abstract class Descuento {
+
+	
+	public Descuento() {}
+	
+	public abstract float getDescuento();
+}

@@ -1,1 +1,20 @@
 1697068193394	Copy compilation units
+1697286216912	Rename type 'ComboProductos'
+1697287994855	Rename field 'prodCompra'
+1697289914075	Rename field 'ptr'
+1697289936032	Rename field 'cantMaximaProd'
+1697289986806	Rename field 'constructor'
+1697292099272	Delete element
+1697292358522	Rename field 'contProductos'
+1697292588973	Rename type 'DescuentoVar'
+1697293114344	Rename local variable 'objDescIn'
+1697293179572	Rename method 'computoTotales'
+1697295336728	Rename local variable 'objDesFijo'
+1697295350916	Rename local variable 'objDescVar'
+1697297030381	Rename field 'ruta'
+1697297044254	Rename field 'longLista'
+1697297083175	Rename field 'rarchivoRutauta'
+1697299147577	Rename resource 'compra2.dat'
+1697299151761	Delete element
+1697309690842	Copy file
+1697309739742	Copy compilation units

@@ -22,10 +22,9 @@ public class DescuentoPorcentajeConTope extends Descuento{
 		}
 	}
 	
-	//Metodo cambiar tope
-	public void changeTope(float tope) {
-		this.tope=tope;
-	}
-	
+	//Metodo get tope
+	public float getTope(float tope) {
+		return this.tope=tope;
+	}	
 
 }
