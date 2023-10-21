@@ -1,0 +1,9 @@
+package com.Ejercicios_Clase7.Excepciones.copy;
+
+public class NullPriceException extends Exception{
+
+	public NullPriceException () {
+		System.out.println("Precio nulo en producto");
+	}
+
+}
