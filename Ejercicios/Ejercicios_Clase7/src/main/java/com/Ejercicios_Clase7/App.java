@@ -36,7 +36,7 @@ public class App {
 		objProductos[5]=new Producto("Cerveza Importada Hoegaarden", 900f, 0.5f);
 		objProductos[6]=new Producto("Cerveza Importada Erdinger", 850.0f, 0.5f);
 		objProductos[7]=new Producto("Cerveza Importada Grolsch", 3200.0f, 1.0f);		
-		
+				
 		//Compras
 		compra1.agregarProducto(objProductos[0],6);
 		compra1.agregarProducto(objProductos[3],2);
@@ -50,12 +50,12 @@ public class App {
 		compra1.calcularPrecioTotal(objDescuentoPorcentaje);	
 		compra2.calcularPrecioTotal(objDecuentoConTope);		
 		compra3.calcularPrecioTotal(objDescuentoFijo);		
-	
+
 		//Imprime tickets.
 		compra1.imprimirTicket();
 		compra2.imprimirTicket();
 		compra3.imprimirTicket();	
-		
+			
 	}
 
 }

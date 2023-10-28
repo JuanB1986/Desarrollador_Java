@@ -1,0 +1,19 @@
+package com.Ejercicio_Integrador;
+
+import java.util.List;
+
+public class Materia {
+
+		private List <String> correlativas;
+		private String nombre;		
+		
+		public Materia() {
+			//this.nombre=nombre;
+			//this.correlativas=correlativas;
+		}
+		
+		public boolean puedeCursar() {
+			return false;
+		}
+	
+}

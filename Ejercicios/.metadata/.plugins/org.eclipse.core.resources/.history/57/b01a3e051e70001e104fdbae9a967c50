@@ -1,0 +1,27 @@
+package com.Ejercicio_Integrador;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Materia {
+
+		private List <String> correlativas;
+		private String nombre;		
+		
+		public Materia() {
+			this.correlativas=new ArrayList<String>();
+		}
+		
+		public void setCorrelativas(List correlativas) {
+			this.correlativas=correlativas;
+		}
+		
+		public void setNombre(String nombre) {
+			this.nombre=nombre;
+		}
+				
+		public boolean puedeCursar() {
+			return false;
+		}
+	
+}

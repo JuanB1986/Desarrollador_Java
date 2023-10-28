@@ -1,8 +1,0 @@
-package com.Ejercicios_Clase7;
-
-
-public class itemCarrito extends Producto{
-
-		public void itmeCarrito ()
-
-}

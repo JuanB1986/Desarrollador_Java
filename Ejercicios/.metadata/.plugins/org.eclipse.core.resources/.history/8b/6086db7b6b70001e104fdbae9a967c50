@@ -1,0 +1,33 @@
+package com.Ejercicio_Integrador;
+
+import java.time.LocalDateTime;
+import java.util.List;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+public class Inscripcion extends Alumno{
+
+	private List<Alumno> alumnos;
+	private List<Materia> materia;
+	private LocalDateTime fecha;
+	
+
+	
+	public Inscripcion() {
+		super();
+	}
+	
+	public void cargaListaInscriptos(String ruta) throws IOException {
+		
+		String archivo = Files.readString(Paths.get(ruta));
+		String separador[]=new String [archivo.length()];
+		
+		System.out.println(archivo.length());
+		
+	}
+	
+	
+	
+
+}

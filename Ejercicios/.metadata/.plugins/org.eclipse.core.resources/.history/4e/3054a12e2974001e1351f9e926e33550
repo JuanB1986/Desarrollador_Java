@@ -1,0 +1,29 @@
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.List;
+
+import models.CsvStruct;
+
+import com.opencsv.bean.CsvToBeanBuilder;
+
+public class lectorArchivosCSV {
+	   public List<CsvStruct> parsearResultados(String ruta) {
+	        List<CsvStruct> listaDeResultados = null;
+	        try {
+	            // En esta primera línea definimos el archivos que va a ingresar
+	        	listaDeResultados = new CsvToBeanBuilder(new FileReader(ruta))
+	                   
+	                    .withSkipLines(1)
+	                    
+	                    .withSeparator(',')
+	                 
+	                    .withType(CsvStruct.class)
+	                    .build()
+	                    .parse();
+
+	        } catch (IOException e) {
+	        e.printStackTrace();
+	    }
+	        return listaDeResultados;
+	    }
+}

@@ -1,0 +1,19 @@
+package com.Ejercicio_Integrador;
+
+import java.util.List;
+
+public class Alumno {
+	
+	private List <String> alumno;
+	
+	public void Alumno() {
+		
+	}
+	
+	
+	public boolean puedeCursar() {
+		
+	}
+	
+	
+}

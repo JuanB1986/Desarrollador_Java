@@ -1,0 +1,6 @@
+Jose Rodriguez:		Fisica 1:		Solicitud valida
+Vanesa Sosa:		Analisis Matematico 2:		Solicitud valida
+Lucia Perez:		Fisica 1:		Solicitud valida
+Vanesa Sosa:		Fisica 3:		No tiene correlativa aprobada
+Ramiro Vasquez:		Analisis Matematico 1:		El alumno no existe
+Jose Rodriguez:		Fisica 4:		La materia no existe

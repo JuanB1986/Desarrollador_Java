@@ -1,0 +1,11 @@
+
+public class Inscripcion {
+
+		private Alumno alumno;
+		private Materia materia;
+		
+		public void Inscrpcion(Alumno alumno, Materia, materia) {
+			
+		}
+	
+}

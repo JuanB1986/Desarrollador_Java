@@ -1,0 +1,20 @@
+package com.Ejercicio_Integrador;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
+public class Materia {
+
+		private List <Materia> correlativas;
+		private String nombre;			//nombre materia
+		private LocalDateTime fecha;
+		
+		public Materia() {
+			
+		}
+		
+		public boolean puedeCursar() {
+			return false;
+		}
+	
+}

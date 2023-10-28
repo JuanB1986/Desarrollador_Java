@@ -1,0 +1,82 @@
+package com.Ejercicio_Integrador;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	List<Alumno> listaAlumnos = new ArrayList<Alumno>();    	
+    	Alumno objAlumno = new Alumno();
+    	
+    	objAlumno.setNombre("José Rodríguez");
+    	objAlumno.setLegajo("J-6955");
+    	objAlumno.setMateriasAprobadas(null);
+    	listaAlumnos.add(objAlumno);
+    	    	
+    	List<String> correlativasAlumno2=new ArrayList<String>();
+    	correlativasAlumno2.add("Informatica 1");
+    	correlativasAlumno2.add("Analisis Matematico 1");
+    	
+    	objAlumno.setNombre("Vanesa Sosa");
+    	objAlumno.setLegajo("V-1589");
+    	objAlumno.setMateriasAprobadas(correlativasAlumno2);
+    	listaAlumnos.add(objAlumno);
+    	
+    	
+    	List<String> correlativasFisica1 = new ArrayList<String>();
+    	List<String> correlativasFisica2 = new ArrayList<String>();
+    	List<String> correlativasFisica3 = new ArrayList<String>();
+    	List<String> correlativasAnalisis1 = new ArrayList<String>();
+    	List<String> correlativasAnalisis2 = new ArrayList<String>();
+    	List<String> correlativasInformatica1 = new ArrayList<String>();
+    	
+    	
+    	//Materias
+    	Materia Analisis1 = new Materia();
+    	Materia Analisis2 = new Materia();
+    	Materia Fisica1 = new Materia();
+    	Materia Fisica2 = new Materia();
+    	Materia Fisica3 = new Materia();
+    	Materia Informatica1 = new Materia();
+    	
+    	Informatica1.setNombre("Informatica 1");
+    	Informatica1.setCorrelativas(correlativasInformatica1);    	
+    	Analisis1.setNombre("Analisis Matematico 1");
+    	Analisis1.setCorrelativas(correlativasAnalisis1);    	
+    	Analisis2.setNombre("Analisis Matematico 2");
+    	Analisis2.setCorrelativas(correlativasAnalisis2);    	
+    	Fisica1.setNombre("Fisica 1");
+    	Fisica1.setCorrelativas(correlativasFisica1);    	
+    	Fisica2.setNombre("Fisica 2");
+    	Fisica2.setCorrelativas(correlativasFisica2);
+    	Fisica3.setNombre("Fisica 3");
+    	Fisica3.setCorrelativas(correlativasFisica3);
+
+    	
+    	
+    	//Lista correlatividades
+    	correlativasInformatica1.add(null);
+    	correlativasAnalisis1.add(null);
+    	correlativasFisica1.add(null);  
+    	
+    	correlativasFisica2.add(Fisica1.getNombre());
+    	correlativasFisica2.add(Analisis1.getNombre());
+  
+    	correlativasFisica3.add(Fisica1.getNombre());
+    	correlativasFisica3.add(Analisis1.getNombre());
+    	correlativasFisica3.add(Fisica2.getNombre());
+    	correlativasFisica3.add(Analisis2.getNombre());
+    
+    	int i;
+    	for (i=0; i<correlativasFisica3.size();++i) {
+    		System.out.println(correlativasFisica3.get(i));
+    	}
+    	
+    	
+    	
+    	
+    	
+    }
+}
