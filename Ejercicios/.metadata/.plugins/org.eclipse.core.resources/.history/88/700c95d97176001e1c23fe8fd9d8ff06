@@ -1,0 +1,15 @@
+package com.Ejercicios_Clase11;
+
+import java.util.List;
+
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.Setter;
+
+public class Persona {
+	
+	@Getter @Setter private List<String> nombreApellido;
+	@Getter @Setter private List<String> fechaNacimiento;
+	
+
+}

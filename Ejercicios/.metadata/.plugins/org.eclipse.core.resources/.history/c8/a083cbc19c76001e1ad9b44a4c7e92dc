@@ -1,0 +1,15 @@
+package com.Ejercicios_Clase11;
+
+import lombok.Getter;
+import lombok.Setter;
+
+public class Persona {
+	
+
+	@Getter @Setter private static String nombre;	
+	@Getter @Setter private static String fecha;
+	
+	public Persona() {}
+	
+}
+

@@ -1,0 +1,59 @@
+package com.Ejercicios_Clase11;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+
+@Data
+public class Persona {
+	
+
+	@Getter @Setter private String nombre;	
+	@Getter @Setter  private String fecha;
+	
+	public Persona() {}
+	
+	@Override
+	public String toString() {
+		return this.nombre+", "+this.fecha;
+	}
+}
+
+
+/*public Persona() {
+this.nombreApellido=new ArrayList<String>();
+this.fechaNacimiento=new ArrayList<String>();
+}
+
+public String getNombre(int index) {
+return this.nombreApellido.get(index);
+}
+
+private void setNombre(String nombreApellido) {
+this.nombreApellido.add(nombreApellido);
+}
+
+public String getFechaNacimeinto(int index) {
+return this.fechaNacimiento.get(index);
+}
+
+public void setFechaNacimiento(String fechaNacimiento) {
+this.fechaNacimiento.add(fechaNacimiento);
+}
+
+public void printList() {
+for (int i=0; i< this.nombreApellido.size();++i) {
+	System.out.println(this.getNombre(i)+", "+this.getFechaNacimeinto(i));			
+}
+}
+
+
+@Override public String toString() {
+
+return "";
+}
+*/

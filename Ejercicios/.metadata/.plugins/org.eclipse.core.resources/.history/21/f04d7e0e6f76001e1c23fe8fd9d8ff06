@@ -1,0 +1,11 @@
+package com.Ejercicios_Clase11;
+
+import java.util.List;
+
+public class Persona {
+	
+	private List<String> nombreApellido;
+	private List<String> fechaNacimiento;
+	
+
+}

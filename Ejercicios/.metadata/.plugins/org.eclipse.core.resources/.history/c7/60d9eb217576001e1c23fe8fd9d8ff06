@@ -1,0 +1,32 @@
+package com.Ejercicios_Clase11;
+
+import java.util.List;
+
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.Setter;
+
+public class Persona {
+	
+	@Getter @Setter 
+	(AccessLevel.PRIVATE) String nombreApellido;
+	
+	@Getter @Setter 
+	(AccessLevel.PRIVATE) String fechaNacimiento;
+	
+	
+	public Persona(String nombreApellido, String fechaNacimiento) {
+		this.nombreApellido=nombreApellido;
+		this.fechaNacimiento=fechaNacimiento;
+	}
+	 
+	public String getNombre() {
+		return this.nombreApellido;
+	}
+	
+	public void setNombre(String nombreApellido) {
+		this.nombreApellido=nombreApellido;
+	}
+	
+	
+}

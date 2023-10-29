@@ -1,0 +1,39 @@
+package com.Ejercicios_Clase11;
+
+import java.util.List;
+
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.Setter;
+
+public class Persona {
+	
+	@Getter @Setter 
+	(AccessLevel.PRIVATE) List<String> nombreApellido;
+	
+	@Getter @Setter 
+	(AccessLevel.PRIVATE) List<String> fechaNacimiento;
+	
+	
+	public Persona() {
+		this.nombreApellido=new ArrayList<String>();
+		this.fechaNacimiento=new ArrayList<String>();
+	}
+	 
+	public List<String> getNombre() {
+		return this.nombreApellido;
+	}
+	
+	public void setNombre(List<String> nombreApellido) {
+		this.nombreApellido=nombreApellido;
+	}
+	
+	public List<String> getFechaNacimeinto() {
+		return this.fechaNacimiento;
+	}
+	
+	public void setFechaNacimiento(String fechaNacimiento) {
+		this.fechaNacimiento=fechaNacimiento;
+	}
+	
+}

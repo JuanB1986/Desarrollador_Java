@@ -1,0 +1,30 @@
+package com.Ejercicios_Clase11;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	List<Persona> listadoPersonas = new ArrayList<Persona>();
+        Persona objPersona=new Persona("","");
+        Scanner objIngreso=new Scanner(System.in);
+        
+        
+        
+        String nombre,fecha;
+        
+        System.out.println("Ingrese Nombre y Apellido");
+        objPersona.setNombre(objIngreso.next());
+        System.out.println("Ingrese Fecha de nacimeinto");
+        objPersona.setFechaNacimiento(objIngreso.next());
+        
+        listadoPersonas.add(objPersona);
+        
+        listadoPersonas.get(0).
+        
+    }
+}
