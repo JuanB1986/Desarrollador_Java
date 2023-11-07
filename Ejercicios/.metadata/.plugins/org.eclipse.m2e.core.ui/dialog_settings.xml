@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\JM\Desktop\Java\Curso Neoris\Repositorio\Ejercicios\Ejercicios_Clase13\src\main\java\com\Ejercicios_Clase13"/>
 			<item value="C:\Users\JM\Desktop\Java\Curso Neoris\Ejercicios\Ejercicios_Clase5\src\Ejercicio1y2\Carrito.java"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -26,6 +27,8 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.BORRAR"/>
+			<item value="com.Ejercicios_Clase13"/>
 			<item value="com.Ejercicios_Clase11"/>
 			<item value="com.Ejercicio_Integrador"/>
 		</list>
@@ -33,6 +36,8 @@
 			<item value="com"/>
 		</list>
 		<list key="artifactId">
+			<item value="BORRAR"/>
+			<item value="Ejercicios_Clase13"/>
 			<item value="Ejercicios_Clase11"/>
 			<item value="Ejercicio_Integrador"/>
 		</list>
@@ -70,5 +75,11 @@
 	<section name="org.eclipse.m2e.core.pom.overview">
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item key="width" value="480"/>
+		<item key="height" value="667"/>
+		<item key="x" value="720"/>
+		<item key="y" value="71"/>
 	</section>
 </section>

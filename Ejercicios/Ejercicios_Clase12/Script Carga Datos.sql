@@ -11,9 +11,9 @@ use qatar2022;
 
 -- Cargo datos de la tabla
  INSERT INTO empleado (idEmpleado, nombre, apellido, nacionalidad, dni, Departamento) 
- VALUES ('01', 'Juan', 'Banquero', 'Argentino', '32000111', '1'); 
+ VALUES ('1', 'Juan', 'Banquero', 'Argentino', '32000111', '11'); 
  INSERT INTO empleado (idEmpleado, nombre, apellido, nacionalidad, dni, Departamento)
- VALUES ('02', 'Nikola', 'Tesla', 'Serbia', '1236896','2');
+ VALUES ('2', 'Nikola', 'Tesla', 'Serbia', '1236896','12');
 
 -- Actualiza nombre de empleado
 UPDATE empleado SET nombre = 'Juan Manuel' WHERE nombre = 'Juan';
