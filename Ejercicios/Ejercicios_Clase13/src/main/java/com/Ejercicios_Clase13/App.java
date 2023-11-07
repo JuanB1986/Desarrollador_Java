@@ -76,40 +76,6 @@ public class App
     		pStatement.close();    		
     		connection.close();
     	}
-    	catch(SQLException e) {System.out.println( "DELETE: Failed" );} 
-    	
-    	
+    	catch(SQLException e) {System.out.println( "DELETE: Failed" );}     	
     }
 }
-
-
-
-
-
-/*
-    		pStatement.setInt(1, 3);
-    		pStatement.setString(2, "Negrito");
-    		pStatement.setString(3, "Negrito");
-    		pStatement.setString(4, "Negrito");
-    		pStatement.setInt(5, 35);
-    		pStatement.setInt(6, 2);
-    	pStatement.executeUpdate();
-     		connection = DriverManager.getConnection(DB_URL, user, password);
-    		statement = connection.createStatement();
-    		
-    		ResultSet querry = statement.executeQuery("SELECT * FROM empleado");
-    		System.out.println("Conectado");
-    		    		
-    		String base="";
-    		while (querry.next())
-    		{
-    			base += querry.getString("nombre")+" "+querry.getString("apellido")+" "+querry.getString("nacionalidad")+" "+querry.getString("dni")+"\n";    			
-    		}
- 
-            String q1 = "INSERT INTO empleado\nVALUES ('3', 'asd', 'qqq', 'wert', '123', '14');";
-            
-            statement.executeUpdate(q1);
-    		
-    		System.out.println(q1);
-    		connection.close();
- */
