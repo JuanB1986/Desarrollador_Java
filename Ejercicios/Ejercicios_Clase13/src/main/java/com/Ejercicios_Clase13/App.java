@@ -33,6 +33,9 @@ public class App
 	    	
 	    	//Consulta: desde tabla y campos.
 	    	System.out.println(objSQL.SQLRead("empleado", "apellido,nombre,nacionalidad,dni,idEmpleado"));
+	    	
+	    	//Cierro conexion
+	    	objSQL.SQLClose();
     	}
     }
 }
