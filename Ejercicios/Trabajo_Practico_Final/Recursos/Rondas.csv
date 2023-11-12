@@ -1,0 +1,16 @@
+1, Argentina, 1, 2, Arabia Saudita
+1, Polonia, 0, 0, Mexico
+1, Argentina, 2, 0, Mexico
+1, Arabia Saudita, 0, 2, Polonia
+2, Portugal, 3, 0, Ghana
+2, Uruguay, 2, 0, Corea del Sur
+2, Corea del Sur, 1, 1, Ghana
+2, Portugal, 1, 4, Uruguay
+3, Qatar, 0, 2, Ecuador
+3, Senegal, 0, 3, Paises Bajos
+3, Paises Bajos, 2, 2, Ecuador
+3, Senegal, 3, 1, Qatar
+4, Inglaterra, 2, 1, Iran
+4, Estados Unidos, 1, 1, Gales
+4, Gales, 1, 0, Iran
+4, Inglaterra, 2, 2, Estados Unidos

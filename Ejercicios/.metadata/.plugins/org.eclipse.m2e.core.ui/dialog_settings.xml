@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\JM\Desktop\Java\Curso Neoris\Repositorio\Ejercicios\Ejercicio_Integrador"/>
 			<item value="C:\Users\JM\Desktop\Java\Curso Neoris\Repositorio\Ejercicios\Ejercicios_Clase13\src\main\java\com\Ejercicios_Clase13"/>
 			<item value="C:\Users\JM\Desktop\Java\Curso Neoris\Ejercicios\Ejercicios_Clase5\src\Ejercicio1y2\Carrito.java"/>
 		</list>
@@ -27,6 +28,8 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.Ejercicios_Clase14"/>
+			<item value="com.Trabajo_Practico_Final"/>
 			<item value="com.BORRAR"/>
 			<item value="com.Ejercicios_Clase13"/>
 			<item value="com.Ejercicios_Clase11"/>
@@ -36,6 +39,8 @@
 			<item value="com"/>
 		</list>
 		<list key="artifactId">
+			<item value="Ejercicios_Clase14"/>
+			<item value="Trabajo_Practico_Final"/>
 			<item value="BORRAR"/>
 			<item value="Ejercicios_Clase13"/>
 			<item value="Ejercicios_Clase11"/>

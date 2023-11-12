@@ -1,0 +1,48 @@
+Mariana,Argentina,x, , ,Arabia Saudita
+Mariana,Polonia, ,x, ,Mexico
+Mariana,Argentina,x , , ,Mexico
+Mariana,Arabia Saudita, , ,x,Polonia
+Pedro,Argentina,x, , ,Arabia Saudita
+Pedro,Polonia, , ,x,Mexico
+Pedro,Argentina,x, , ,Mexico
+Pedro,Arabia Saudita, ,x, ,Polonia
+Juan,Argentina,x, , ,Arabia Saudita
+Juan,Polonia, ,x , ,Mexico
+Juan,Argentina,x, , ,Mexico
+Juan,Arabia Saudita,x, , ,Polonia
+Mariana,Portugal,x, , ,Ghana
+Mariana,Uruguay,x , , ,Corea del Sur
+Mariana,Corea del Sur,x , , ,Ghana
+Mariana,Portugal, ,x, ,Uruguay
+Pedro,Portugal,x, , ,Ghana
+Pedro,Uruguay, ,x , ,Corea del Sur
+Pedro,Corea del Sur, , ,x ,Ghana
+Pedro,Portugal,x , , ,Uruguay
+Juan,Portugal, ,x , ,Ghana
+Juan,Uruguay,x , , ,Corea del Sur
+Juan,Corea del Sur, ,x , ,Ghana
+Juan,Portugal, ,x , ,Uruguay
+Mariana,Qatar, ,x, ,Ecuador
+Mariana,Senegal, ,x, ,Paises Bajos
+Mariana,Paises Bajos, , ,x,Ecuador
+Mariana,Senegal,x, , ,Qatar
+Pedro,Qatar, , ,x,Ecuador
+Pedro,Senegal, , ,x,Paises Bajos
+Pedro,Paises Bajos,x, , ,Ecuador
+Pedro,Senegal, ,x, ,Qatar
+Juan,Qatar,x , , ,Ecuador
+Juan,Senegal, ,x, ,Paises Bajos
+Juan,Paises Bajos, ,x, ,Ecuador
+Juan,Senegal, , ,x ,Qatar
+Mariana,Inglaterra, , ,x,Iran
+Mariana,Estados Unidos,x, , ,Gales
+Mariana,Gales, ,x, ,Iran
+Mariana,Inglaterra,x, , ,Estados Unidos
+Pedro,Inglaterra,x, , ,Iran
+Pedro,Estados Unidos, ,x, ,Gales
+Pedro,Gales, , ,x ,Iran
+Pedro,Inglaterra, , ,x,Estados Unidos
+Juan,Inglaterra,x, , ,Iran
+Juan,Estados Unidos,x , , ,Gales
+Juan,Gales,x, ,  ,Iran
+Juan,Inglaterra,x, , ,Estados Unidos

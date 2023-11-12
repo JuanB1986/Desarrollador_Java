@@ -1,0 +1,7 @@
+
+<Juan> hola buenas tardes.
+<Manuel> hola que tal
+<Juan> aca estoy haciendo un trabajo practico de Java
+<Manuel> Probando el chat?
+<Juan> exacto, funciona bien !
+<Banquero> probando integridad de la base de datos...
