@@ -44,8 +44,6 @@ public class App
     	HmiData.setText(String.valueOf(new String(emojiLike, Charset.forName("utf-8"))+" " +objCancion1.getPopularidad().getLikes()),1);
     	HmiData.setText(String.valueOf(new String(emojiDisike, Charset.forName("utf-8")) +" "+objCancion1.getPopularidad().getDislikes()),2);
     	HmiData.setText(String.valueOf(new String(emojiReprod, Charset.forName("utf-8"))+" "+objCancion1.getPopularidad().getReproducciones()),3);
-    	
-    	byte b1[]={0x2,0x2,0x2,0x2};
-    	String f = new String(b1, Charset.forName("utf-8"));
+
     }
 }

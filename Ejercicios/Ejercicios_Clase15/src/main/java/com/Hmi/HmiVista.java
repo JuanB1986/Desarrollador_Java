@@ -1,7 +1,6 @@
  package com.Hmi;
 
 import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
@@ -10,7 +9,6 @@ import javax.swing.SwingConstants;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import java.awt.Color;
 import java.awt.SystemColor;
-import javax.swing.UIManager;
 import java.awt.Font;
 
 
@@ -21,8 +19,7 @@ public class HmiVista extends javax.swing.JFrame {
 
 	public HmiVista() {
 		setForeground(SystemColor.inactiveCaption);
-		setBackground(new Color(255, 255, 255));
-		
+		setBackground(new Color(255, 255, 255));		
 		
 		setDefaultCloseOperation(HmiVista.EXIT_ON_CLOSE);
 		setBounds(100, 100, 560, 254);
