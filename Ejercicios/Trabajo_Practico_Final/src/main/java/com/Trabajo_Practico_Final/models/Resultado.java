@@ -14,46 +14,55 @@ public class Resultado {
 		
 		this.pronosticos = new ArrayList<Pronostico>();
 		this.pronosticos = pronosticos;
-		this.participantes=new ArrayList<String>();		
+		this.participantes=new ArrayList<String>();			//Listo los participantes en este arrayList
 		
 	}
 	
-	public void computar() {
+	public void procesar() {
 		
 		//Lista los participantes
-		for (int i=0;i<this.pronosticos.size();++i) {
+		for (Pronostico pron : pronosticos) {
 			boolean flag=true;
-			for(int j=0;j<this.participantes.size();++j) {
-				if(this.pronosticos.get(i).getPersona().equals(this.participantes.get(j))) {
+			for(String particip : participantes) {
+				if(pron.getPersona().equals(particip)) {
 					flag=false;
 				}
 			}
-			if (flag) {this.participantes.add(this.pronosticos.get(i).getPersona());}
+			if (flag) {this.participantes.add(pron.getPersona());}
 		}		
 		
 		puntaje = new int [this.participantes.size()];		
 		aciertos = new int [this.participantes.size()];
 		
-		//Puntaje
-		for (int i=0;i<this.pronosticos.size();++i) {
-			for(int j=0;j<this.participantes.size();++j) {
-				if (this.participantes.get(j).equals(this.pronosticos.get(i).getPersona())) {
-					puntaje[j] += this.pronosticos.get(i).getPuntaje();	
+		//Calcula Puntaje
+		for (Pronostico pron : pronosticos) 
+		{
+			for(int j=0;j<this.participantes.size();++j) 
+			{
+				if (this.participantes.get(j).equals(pron.getPersona())) 
+				{
+					puntaje[j] += pron.getPuntaje();					
 					
-					if (!(this.pronosticos.get(i).getPuntaje()==0)) {
+					if (!(pron.getPuntaje()==0)) {
 						aciertos[j] += 1;
 					}
 				}
 			}
-		}		
-	}
+		}	
+		
+		//Suma puntaje extra por aciertos de rondas completas
+		for (int i=0; i<participantes.size();++i) {
+			puntaje[i] += ReglasPuntaje.puntosAciertosPorRondas(pronosticos, participantes.get(i));
+		}	
+		
+	}	
 	
-	
+	//Muestra participantes, puntajes y aciertos
 	public void mostrar() {		
 		for(int j=0;j<this.participantes.size();++j) {
 			System.out.println(this.participantes.get(j) + ": Puntaje: "+puntaje[j]+" - Aciertos "+aciertos[j]);
 		}
 	}
-	
+
 
 }

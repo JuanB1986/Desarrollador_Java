@@ -10,9 +10,5 @@ public  @Data class Ronda {
 	public Ronda (String ronda, Partido partido) {
 		this.ronda=ronda;
 		this.partido=partido;
-	}	
-	
-	
-
-
+	}
 }

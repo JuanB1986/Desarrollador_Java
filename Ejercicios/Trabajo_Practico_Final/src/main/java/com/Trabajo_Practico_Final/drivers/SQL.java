@@ -27,12 +27,12 @@ public class SQL {
 	
 	
 	//Consulta con SELECT * FROM
-	public String SQLRead(String tabla, String columnas) {		
+	public String SQLRead(String consulta, String columnas) {		
 		String split[] = columnas.split(",");
 		String retVal=""; 		
 	   	try {    			
     		statement = connection.createStatement();    		
-    		resultSet = statement.executeQuery("SELECT * FROM "+tabla); 
+    		resultSet = statement.executeQuery(consulta); 
     		
     		while (resultSet.next()) {
     			for (int i=0; i<split.length;++i) {

@@ -28,6 +28,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.Ejercicios_Clase15"/>
 			<item value="com.Ejercicios_Clase14"/>
 			<item value="com.Trabajo_Practico_Final"/>
 			<item value="com.BORRAR"/>
@@ -39,6 +40,7 @@
 			<item value="com"/>
 		</list>
 		<list key="artifactId">
+			<item value="Ejercicios_Clase15"/>
 			<item value="Ejercicios_Clase14"/>
 			<item value="Trabajo_Practico_Final"/>
 			<item value="BORRAR"/>
