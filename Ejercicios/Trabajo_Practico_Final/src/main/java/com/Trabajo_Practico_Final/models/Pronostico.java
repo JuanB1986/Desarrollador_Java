@@ -4,11 +4,9 @@ import lombok.Data;
 
 public @Data class Pronostico {
 	
-	private int idPronostico;
 	private Ronda ronda;
 	private String persona;
-	private String resultado;
-	
+	private String resultado;	
 	
 	public Pronostico(Ronda ronda, String persona, String resultado) {
 		this.setPersona(persona);

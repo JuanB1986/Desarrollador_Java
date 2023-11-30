@@ -7,17 +7,17 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class SQL {
+public abstract class SQL {
 	
-	private Connection connection;
-	private PreparedStatement preparedStatement;
-	private Statement statement;
-	private ResultSet resultSet;
+	private static Connection connection;
+	private static PreparedStatement preparedStatement;
+	private static Statement statement;
+	private static ResultSet resultSet;
 	
 	public SQL() {}
 	
 	//Conexion a base de datos
-	public boolean  SQLConnect(String url, String user, String password) {
+	public static boolean Connect(String url, String user, String password) {
 		try {
 			connection = DriverManager.getConnection(url, user, password);
 			return !connection.isClosed();
@@ -27,7 +27,7 @@ public class SQL {
 	
 	
 	//Consulta con SELECT * FROM
-	public String SQLRead(String consulta, String columnas) {		
+	public static String Read(String consulta, String columnas) {		
 		String split[] = columnas.split(",");
 		String retVal=""; 		
 	   	try {    			
@@ -47,7 +47,7 @@ public class SQL {
 	
 	
 	//Consultas: INSERT, UPDATE
-	public boolean SQLQuerry(String querry) {
+	public static boolean Querry(String querry) {
 		try {			
  			preparedStatement = connection.prepareStatement(querry);    		
 			preparedStatement.executeUpdate();   
@@ -57,7 +57,7 @@ public class SQL {
 	}
 		
 	//Cierra conexión
-	public boolean SQLClose() {
+	public static boolean Close() {
 		try {
 			statement.close();
 			preparedStatement.close();
@@ -65,5 +65,6 @@ public class SQL {
 			return connection.isClosed();
 		}
 		catch(SQLException e) {return false;}
+		catch(NullPointerException n) {return false;}
 	}
 }

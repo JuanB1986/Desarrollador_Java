@@ -33,10 +33,10 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-    	<groupId>org.Example</groupId>
-    	<artifactId>Ejercicio_Integrador</artifactId>
-    	<version>1.0</version>
-    </dependency>
+	<dependency>
+   	 	<groupId>com.opencsv</groupId>
+    	<artifactId>opencsv</artifactId>
+    	<version>5.9</version>
+	</dependency>
   </dependencies>
 </project>
